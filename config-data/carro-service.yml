@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: carro-service
+  mvc:
+    #--- spring lanza una excepcion si no se encuentra un handler  ---#
+    throw-exception-if-no-handler-found: true 
+  web:
+    resources:
+    #---
+    # spring boot registra automaticamente los mapeos para servir archivos estaticos (imagenes, css, js)
+    # desde /static, /public, /resources,
+
+    # con false se desactivan los mapeos automaticos, si no existe un endpoint lanzara una excepcion.
+    # ---#
+      add-mappings: false
+
+
+
