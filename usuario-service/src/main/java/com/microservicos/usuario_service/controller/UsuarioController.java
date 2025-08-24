@@ -89,7 +89,7 @@ public class UsuarioController {
         Map<String, Object> resp = new HashMap<>();
         resp.put("usuario", usuario);
         resp.put("carros", usuarioService.getCarrosWithFeign(id));
-        resp.put("motos", usuarioService.getMotos(id));
+        //resp.put("motos", usuarioService.getMotos(id));
 
         return ResponseEntity.ok().body(resp);
     }
