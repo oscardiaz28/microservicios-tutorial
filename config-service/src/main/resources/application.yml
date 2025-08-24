@@ -7,7 +7,7 @@ spring:
         config:
             server:
                 git: # se configura que este servidor va a usar un repositorio git como fuente de configuracion
-                    default-label: config-server # indica la rama del repositorio git que usara por defecto
+                    default-label: eureka # indica la rama del repositorio git que usara
                     uri: https://github.com/oscardiaz28/microservicios-tutorial # url del repositorio git remoto
                     search-paths: config-data  # indica la carpeta dentro del repo git donde se encuentra los
                     # archivos de configuracion de cada microservicio

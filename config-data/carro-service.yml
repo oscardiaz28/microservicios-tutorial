@@ -16,6 +16,13 @@ spring:
     # con false se desactivan los mapeos automaticos, si no existe un endpoint lanzara una excepcion.
     # ---#
       add-mappings: false
-
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url: 
+      default-zone: http://localhost:8761/eureka
+    instance: 
+      hostname: localhost
 
 
